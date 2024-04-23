@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon Voyage Named Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+</head>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1hCa9YWJyzP5Yd-th4BjuAPSsk3PcKqvUjMIBQM8lfw&s" alt="Bon Voyage Logo">
+            <h1>Bon Voyage Tours</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Tours</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <select id="packagesDropdown">
+            <option value="" selected disabled>Select a package</option>
+            <option value="Adventure Tour">Adventure Tour</option>
+            <option value="Chota Break">Chota Break</option>
+            <option value="Gujarati Special">Gujarati Special</option>
+            <option value="Honeymoon Special">Honeymoon Special</option>
+            <option value="Luxury Tours">Luxury Tours</option>
+            <option value="Marigold">Marigold</option>
+            <option value="My Fair Lady">My Fair Lady</option>
+            <option value="Second Innings">Second Innings</option>
+            <option value="Student Special">Student Special</option>
+            <option value="Veg Tour">Veg Tour</option>
+            <option value="Youth Special">Youth Special</option>
+        </select>
+    </header>
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('https://img.freepik.com/free-vector/flat-design-travel-facebook-cover_23-2149130939.jpg')"></div>
+                <div class="swiper-slide" style="background-image:url('https://img.freepik.com/free-psd/travel-tourism-facebook-cover-template_106176-3067.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710288000&semt=ais')"></div>
+                <div class="swiper-slide" style="background-image:url('https://img.freepik.com/premium-vector/plane-banner-template_33800-145.jpg')"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="upload-container">
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="fileInput">Choose File</label>
+                <input type="file" id="fileInput" name="file" accept=".jpg, .jpeg, .png, .txt, .pptx, .ppt, .doc, .docx, .zip, .mp4, .pdf, .xlsx">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="country-select">
+            <h2>Choose your country</h2>
+            <select>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+                <option value="Spain">Spain</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="India">India</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Russia">Russia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Argentina">Argentina</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Nigeria">Nigeria</option>
+            </select>
+        </div>
+        <div class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p>Rated 4 out of 5 based on customer reviews.</p>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h3>About Us</h3>
+            <p>Learn about our company and mission.</p>
+        </div>
+        <div>
+            <h3>Destinations</h3>
+            <p>Africa</p>
+            <p>America</p>
+            <p>Australia NewZealand</p>
+            <p>Bhutan</p>
+        </div>
+        <div>
+            <h3>Services</h3>
+            <p>Home</p>
+            <p>Tours At a Glance</p>
+            <p>Best Tour</p>
+            <p>Speciality Tours</p>
+            <p>Economy Tours</p>
+        </div>
+        <div>
+            <h3>Contact Info</h3>
+            <p>Reach out to us:</p>
+            <p>123 Main Street, Pune, Kondhwa</p>
+            <p>bon@bonvoyagenamedtours.com</p>
+            <p>+91 0022562278</p>
+            <a href="login.html">Login</a>
+        </div>
+        <div class="social-media">
+            <h3>Connect with Us</h3>
+            <img src="https://imgs.search.brave.com/jheuiv4a4zOziT7mJee6bzUIPkJbxXlTtezzJ_lmOPY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzAwLzI0LzU5/LzM2MF9GXzMwMDI0/NTk1M19TdmloMURZ/S" alt="Facebook">
+            <img src="https://imgs.search.brave.com/YNCQDhsoUn1RFP-5Sf8zKnP-iquu5nSW9gAZC4N5GFc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzEzLzc1Lzgw/LzM2MF9GXzMxMzc1/ODA5N185ejZDQmtj/RG5rUjRnUmdjVzQ5/bTltM1pNTUpMeDFj/dy5qcGc" alt="Twitter">
+            <img src="https://imgs.search.brave.com/f0ol4IZiikdXNcXki69648EjsT3-9cTy23we9KXjuoE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bG9nby53aW5lL2Ev/bG9nby9JbnN0YWdy/YW0vSW5zdGFncmFt/LUxvZ28ud2luZS5z/dmc.svg" alt="Instagram">
+        </div>
+        <div class="payment-methods">
+            <img src="https://imgs.search.brave.com/hnEWY71pQ2ppfm4cD9jpoQUQasgB9hvQkrII3c5gNl8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4w/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvc2hpZnQtZWNv/bW1lcmNlLzMyL1ZJ/U0EtMTI4LnBuZw" alt="Visa">
+            <img src="https://imgs.search.brave.com/pXSyD6qeuMY74XPqBeWO1GPGb6npx7LL_kE2WRRh3z8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzLzc4N19t/YXN0ZXJjYXJkLmpw/Zw" alt="Mastercard">
+            <img src="https://imgs.search.brave.com/F2X32YQLP77NPXmbREsXY2P3dZPYQYmrSrb3A9ycd9I/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzA1/L0NvbG9yLVBheXBh/bC1Mb2dvLTUwMHg0/MDQuanBn" alt="PayPal">
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000, // Delay between transitions in milliseconds
+                disableOnInteraction: false // Prevents stopping after interaction
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+</html>
